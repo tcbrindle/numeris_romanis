@@ -59,7 +59,7 @@ public:
     constexpr numerus& operator/=(numerus n) { val_ /= n.val_; return *this; }
     constexpr numerus& operator%=(numerus n) { val_ %= n.val_; return *this; }
 
-    static constexpr numerus ab_filum(std::string_view str)
+    static constexpr numerus ab_filo(std::string_view str)
     {
         unsigned long long val = 0;
 
@@ -132,7 +132,7 @@ inline namespace literals_numerorum {
 
     constexpr numerus operator"" _r(const char* str, std::size_t n)
     {
-        return numerus::ab_filum({str, n});
+        return numerus::ab_filo({str, n});
     }
 }
 
